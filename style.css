@@ -1,0 +1,133 @@
+@font-face{
+    font-family:'BlenderPro-Medium';
+    src: url('fonts/BlenderPro-Medium.ttf') format('opentype'); 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    /* font-family: 'Maven Pro', sans-serif; */
+    /* font-family: 'Raleway'; */
+    font-family:'BlenderPro-Medium';
+    /* Hides both vertical and horizontal  scroll */
+    /* overflow: hidden; */
+
+    /* Hides horizontal scroll */
+    overflow-x: hidden;
+}
+
+video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute; 
+    /* top: 0;
+    left: 0; */
+  }
+
+.headerOpacity{
+
+    height: 100vh;
+    background: rgb(7, 7, 241);
+    /* background: #0768DE; */
+    opacity: 0.7;
+   
+    /* fallback for old browsers */
+    /* background: #1A2980;   */
+     
+     /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);   */
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, #26D0CE, #1A2980); */
+
+}
+
+.navbar{
+     /* background-color:rgb(8, 21, 255); */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem; 
+}
+
+ul li{
+    list-style-type:none;
+    margin: 0 1rem;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.viewport-header {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    /* max-width: 100px; */
+}
+
+.viewport-header h1{
+    margin-top: 2%;
+}
+
+.headerBtn{
+    background-color: rgb(241, 247, 246);
+    border: none;
+    border-radius: 5rem;
+    color: rgb(8, 21, 255);
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;   
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+}
+
+#aboutme{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutme main{
+    background-color: cornflowerblue;
+    height: 50%;
+}
+
+#aboutme aside{
+    background-color: rgb(47, 86, 160);
+    height: 50%;
+}
+
+@media (max-width: 500px){
+     .navbar{
+         display: none;
+     }
+     .viewport-header{
+         font-size: 1rem;
+     }
+ }
+
+ /* font-size 1.2 when it's mid-size */
+
+    /* Search for better way of changing default color */
+    /* color: green; */
