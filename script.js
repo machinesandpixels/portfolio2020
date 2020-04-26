@@ -1,11 +1,15 @@
-let i = 0;
-let txt = 'Hi, I am a self taught developer and bootcamp grad.';
-let speed = 50;
+const letters = document.querySelector('.typing');
 
-// function typeWriter() {
-//     if (i < txt.length) {
-//       document.getElementById("typing").innerHTML += txt.charAt(i);
-//       i++;
-//       setTimeout(typeWriter, speed);
-//     }
-//   }
+let i = 0;
+let text = 'Hi, I am a self taught developer and bootcamp grad.';
+let speed = 110;
+
+function typeWriter() {
+    if (i < text.length) {
+      letters.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+typeWriter();

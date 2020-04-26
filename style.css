@@ -15,14 +15,14 @@ html {
 
 body{
     
-    /* font-family: 'Maven Pro', sans-serif; */
-    /* font-family: 'Raleway'; */
     font-family:'BlenderPro-Medium';
-    /* Hides both vertical and horizontal  scroll */
-    /* overflow: hidden; */
-
+     /* font-family: 'Raleway'; */
+   
     /* Hides horizontal scroll */
     overflow-x: hidden;
+
+     /* Hides both vertical and horizontal  scroll */
+    /* overflow: hidden; */
 }
 
 video {
@@ -35,12 +35,11 @@ video {
   }
 
 .headerOpacity{
-
-    height: 100vh;
     background: rgb(7, 7, 241);
-    /* background: #0768DE; */
+    height: 100vh;
     opacity: 0.7;
-   
+    
+   /* background: #0768DE; */
     /* fallback for old browsers */
     /* background: #1A2980;   */
      
