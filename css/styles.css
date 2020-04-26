@@ -1,6 +1,6 @@
 @font-face{
     font-family:'BlenderPro-Medium';
-    src: url('fonts/BlenderPro-Medium.ttf') format('opentype'); 
+    src: url('/fonts/BlenderPro-Medium.ttf') format('opentype'); 
 }
 
 *{
