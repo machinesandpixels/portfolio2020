@@ -129,6 +129,10 @@ section{
     height: 50%;
 }
 
+.bioText{
+    max-width: 36vw;
+}
+
 .bioImage{
     max-height: 50vh;
     max-width: 50vw;
