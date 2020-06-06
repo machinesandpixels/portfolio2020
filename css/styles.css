@@ -114,17 +114,17 @@ section{
     color: rgb(8, 21, 255);
 }
 
-#aboutme{
+.container{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#aboutme main{
+.container main{
     height: 50%;
 }
 
-#aboutme aside{
+.container aside{
     background-color: rgb(47, 86, 160);
     height: 50%;
 }
