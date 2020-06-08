@@ -1,6 +1,11 @@
 @font-face{
     font-family:'BlenderPro-Medium';
-    src: url('/fonts/BlenderPro-Medium.ttf') format('opentype'); 
+    src: url('/fonts/BlenderPro-Medium.ttf') format('opentype');
+}
+
+@font-face{
+    font-family:'sf-ui-display-light';
+    src: url('/fonts/sf-ui-display-light.otf') format('opentype');
 }
 
 *{
@@ -102,6 +107,7 @@ a:hover, a:visited, a:link, a:active
 section{
     height: 100vh;
     width: 100vw;
+    font-family: 'sf-ui-display-light';
 }
 .primary{
     color: rgb(8, 21, 255);
