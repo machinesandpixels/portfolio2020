@@ -19,17 +19,31 @@ if (/Edge/.test(navigator.userAgent)) {
 }
 
 const letters = document.querySelector('.typing');
+const about = document.querySelector('.about');
+
+// Event Listeners
+about.addEventListener('click', animateAbout);
 
 let i = 0;
 let text = 'Hi, I am a self taught developer and bootcamp grad.';
 let speed = 80;
 
-function typeWriter() {
+const typeWriter = () => {
     if (i < text.length) {
       letters.innerHTML += text.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
     }
-  }
+}
 
 typeWriter();
+
+// Functions for event listeners
+function animateAbout(){
+  let h1 = document.querySelector('.bioText > h1');
+  let img = document.querySelector('.bioImage');
+  h1.classList.add("animate__animated");
+  h1.classList.add("animate__fadeInLeft");
+  img.classList.add("animate__animated");
+  img.classList.add("animate__fadeInRight");
+}
