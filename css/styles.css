@@ -1,6 +1,11 @@
 @font-face{
     font-family:'BlenderPro-Medium';
-    src: url('/fonts/BlenderPro-Medium.ttf') format('opentype'); 
+    src: url('/fonts/BlenderPro-Medium.ttf') format('opentype');
+}
+
+@font-face{
+    font-family:'sf-ui-display-light';
+    src: url('/fonts/sf-ui-display-light.otf') format('opentype');
 }
 
 *{
@@ -34,14 +39,7 @@ video {
     height: 100vh;
     width: 100vw;
     position: absolute; 
-    /* min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
-  }
+}
 
 .headerOpacity{
     background: rgb(7, 7, 241);
@@ -109,23 +107,23 @@ a:hover, a:visited, a:link, a:active
 section{
     height: 100vh;
     width: 100vw;
+    font-family: 'sf-ui-display-light';
 }
 .primary{
     color: rgb(8, 21, 255);
 }
 
-#aboutme{
+.container{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#aboutme main{
+.container main{
     height: 50%;
 }
 
-#aboutme aside{
-    background-color: rgb(47, 86, 160);
+.container aside{
     height: 50%;
 }
 
@@ -134,8 +132,8 @@ section{
 }
 
 .bioImage{
-    max-height: 50vh;
-    max-width: 50vw;
+    max-height: 30vh;
+    max-width: 30vw;
 }
 
 @media (max-width: 500px){
