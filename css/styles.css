@@ -129,6 +129,12 @@ section{
     height: 50%;
 }
 
+main > img {
+    margin-top: 1rem;
+    height: 30%;
+    margin: 1rem;
+}
+
 .bioText{
     max-width: 36vw;
     font-size: .9rem;
