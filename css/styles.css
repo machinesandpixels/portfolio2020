@@ -129,10 +129,15 @@ section{
     height: 50%;
 }
 
-main > img {
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon > img {
     margin-top: 1rem;
-    height: 30%;
-    margin: 1rem;
+    height: 120px;
+    padding: .5rem;
 }
 
 .bioText{
