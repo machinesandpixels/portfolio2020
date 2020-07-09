@@ -20,9 +20,11 @@ if (/Edge/.test(navigator.userAgent)) {
 
 const letters = document.querySelector('.typing');
 const about = document.querySelector('.about');
+const icon = document.querySelector('.icon');
 
 // Event Listeners
 about.addEventListener('click', animateAbout);
+icon.addEventListener('mouseover', animateIcons);
 
 let i = 0;
 let text = 'Hi, I am a self taught developer and bootcamp grad.';
@@ -46,4 +48,12 @@ function animateAbout(){
   h1.classList.add("animate__fadeInLeft");
   img.classList.add("animate__animated");
   img.classList.add("animate__fadeInRight");
+}
+
+function animateIcons(event){
+  let icon = event.target;
+  icon.classList.add("animate__animated");
+  icon.classList.add("animate__pulse");
+  // icon.classList.remove("animate__animated");
+  // icon.classList.remove("animate__pulse");
 }
