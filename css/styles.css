@@ -94,13 +94,13 @@ a:hover, a:visited, a:link, a:active
     margin-top: 2%;
 }
 
-.headerBtn{
+.projectsBtn{
     background-color: rgb(241, 247, 246);
     border: none;
     border-radius: 5rem;
     color: rgb(8, 21, 255);
     margin-top: 2rem;
-    padding: 0.5rem 1rem;
+    padding: .7rem 1.2rem;
     text-transform: uppercase;   
 }
 
@@ -163,6 +163,25 @@ section{
      .viewport-header{
          font-size: .5rem;
      }
+     .projectsBtn{
+        padding: .3rem .7rem;
+     }
+     .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container aside{
+        height: 125%;
+    }
+    .icon > img {
+        margin-top: 1rem;
+        height: 80px;
+    }       
+    .bioText{
+        max-width: 100vw;
+        font-size: .5rem;
+        text-align: center;
+    }
  }
 
  /* font-size 1.2 when it's mid-size */
