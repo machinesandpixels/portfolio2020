@@ -98,7 +98,7 @@ a:hover, a:visited, a:link, a:active
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     margin-top: 2rem;
-    padding: 1rem 2rem;
+    padding: .8rem 1.8rem;
     text-transform: uppercase;   
 }
 
@@ -140,7 +140,7 @@ section{
 
 .bioText{
     max-width: 36vw;
-    font-size: .7rem;
+    font-size: 1.2rem;
 }
 
 .bioImage{

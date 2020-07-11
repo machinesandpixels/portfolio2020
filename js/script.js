@@ -21,10 +21,12 @@ if (/Edge/.test(navigator.userAgent)) {
 const letters = document.querySelector('.typing');
 const about = document.querySelector('.about');
 const icon = document.querySelector('.icon');
+const btn = document.querySelector('.projectsBtn');
 
 // Event Listeners
 about.addEventListener('click', animateAbout);
 icon.addEventListener('mouseover', animateIcons);
+btn.addEventListener('mouseover', animateButton);
 
 let i = 0;
 let text = 'Hi, I am a self taught developer and bootcamp grad.';
@@ -56,4 +58,10 @@ function animateIcons(event){
   icon.classList.add("animate__pulse");
   // icon.classList.remove("animate__animated");
   // icon.classList.remove("animate__pulse");
+}
+
+function animateButton(event){
+  let btn = event.target;
+  btn.classList.add("animate__animated");
+  btn.classList.add("animate__pulse");
 }
