@@ -44,7 +44,7 @@ typeWriter();
 
 // Functions for event listeners
 function animateAbout(){
-  let h1 = document.querySelector('.bioText > h1');
+  let h1 = document.querySelector('.bioText > p');
   let img = document.querySelector('.bioImage');
   h1.classList.add("animate__animated");
   h1.classList.add("animate__fadeInLeft");
