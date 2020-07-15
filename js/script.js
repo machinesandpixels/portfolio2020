@@ -21,15 +21,17 @@ if (/Edge/.test(navigator.userAgent)) {
 const letters = document.querySelector('.typing');
 const about = document.querySelector('.about');
 const icon = document.querySelector('.icon');
-const btn = document.querySelector('.projectsBtn');
 
 // Event Listeners
 about.addEventListener('click', animateAbout);
-icon.addEventListener('mouseover', animateIcons);
-icon.addEventListener('mouseout', removeAnimation);
-btn.addEventListener('mouseover', animateButton);
-btn.addEventListener('mouseout', removeAnimation);
+icon.addEventListener('mouseover', animatePulse);
+icon.addEventListener('mouseout', removePulse);
+document.querySelectorAll('.projectsBtn').forEach(btn => {
+  btn.addEventListener('mouseover', animatePulse);
+  btn.addEventListener('mouseout', removePulse);
+});
 
+// Typing effect
 let i = 0;
 let text = 'Hi, I am a self taught developer and bootcamp grad.';
 let speed = 80;
@@ -54,21 +56,13 @@ function animateAbout(){
   img.classList.add("animate__fadeInRight");
 }
 
-function animateIcons(event){
-  let icon = event.target;
-  icon.classList.add("animate__animated");
-  icon.classList.add("animate__pulse");
-  // icon.classList.remove("animate__animated");
-  // icon.classList.remove("animate__pulse");
+function animatePulse(event){
+  let element = event.target;
+  element.classList.add("animate__animated");
+  element.classList.add("animate__pulse");
 }
 
-function animateButton(event){
-  let btn = event.target;
-  btn.classList.add("animate__animated");
-  btn.classList.add("animate__pulse");
-}
-
-function removeAnimation(event){
+function removePulse(event){
   let element = event.target;
   element.classList.remove("animate__animated");
   element.classList.remove("animate__pulse");
