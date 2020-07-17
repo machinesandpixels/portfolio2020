@@ -138,9 +138,14 @@ section{
     padding: .5rem;
 }
 
+section > .bioText{
+    border-left: var(--text-color) solid 2px;
+    padding-left: 50px;
+}
+
 .bioText{
-    max-width: 36vw;
     font-size: 1.2rem;
+    max-width: 46vw;
 }
 
 .bioImage{
