@@ -169,11 +169,16 @@ section > .bioText{
 .contact{
     background-color: var(--text-color);
     color: whitesmoke;
+    font-family: 'Inter', sans-serif;
     height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.9;
+}
+
+.contact > p{
+    padding: 2rem;
 }
 
 @media (max-width: 1024px){
