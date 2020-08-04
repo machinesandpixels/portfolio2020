@@ -24,10 +24,10 @@ const icon = document.querySelector('.icon');
 
 // Event Listeners
 about.addEventListener('click', animateAbout);
-icon.addEventListener('mouseover', animatePulse);
+icon.addEventListener('mouseover', addPulse);
 icon.addEventListener('mouseout', removePulse);
 document.querySelectorAll('.projectsBtn').forEach(btn => {
-  btn.addEventListener('mouseover', animatePulse);
+  btn.addEventListener('mouseover', addPulse);
   btn.addEventListener('mouseout', removePulse);
 });
 
@@ -56,7 +56,7 @@ function animateAbout(){
   img.classList.add("animate__fadeInRight");
 }
 
-function animatePulse(event){
+function addPulse(event){
   let element = event.target;
   element.classList.add("animate__animated");
   element.classList.add("animate__pulse");
