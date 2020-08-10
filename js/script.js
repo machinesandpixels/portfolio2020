@@ -26,7 +26,7 @@ const icon = document.querySelector('.icon');
 about.addEventListener('click', animateAbout);
 icon.addEventListener('mouseover', addPulse);
 icon.addEventListener('mouseout', removePulse);
-document.querySelectorAll('.projectsBtn').forEach(btn => {
+document.querySelectorAll('.projects-btn').forEach(btn => {
   btn.addEventListener('mouseover', addPulse);
   btn.addEventListener('mouseout', removePulse);
 });
@@ -60,10 +60,12 @@ function addPulse(event){
   let element = event.target;
   element.classList.add("animate__animated");
   element.classList.add("animate__pulse");
+  element.classList.add("animate__fast");
 }
 
 function removePulse(event){
   let element = event.target;
   element.classList.remove("animate__animated");
   element.classList.remove("animate__pulse");
+  element.classList.remove("animate__fast");
 }
