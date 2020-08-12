@@ -14,27 +14,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Styles.CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
     <script defer src="js/script.js"></script>
-    <title>Machines & Pixels</title>
+
+    <title>Machines & Pixels | Jesus Quezada </title>
 </head>
 <body>
-
-     <!-- The playsinline attribute is so this works on iOS  -->
-
-     <!-- 
-         Background video from Pexels.com
-        https://www.pexels.com/video/typing-on-a-macbook-853765/ 
-    -->
-    <video id="video"
-        poster="media/background_still.png" 
-        src="media/Typing On A Macbook.mp4"
-        playsinline 
-        autoplay 
-        muted 
-        loop
-    >
-    </video> 
-    
+    <section>
+        <!-- 
+            Background video from Pexels.com
+            https://www.pexels.com/video/typing-on-a-macbook-853765/ 
+            -->
+        <video 
+            poster="media/background_still.png" 
+            src="media/Typing On A Macbook.mp4"
+            playsinline 
+            autoplay 
+            muted 
+            loop
+        >
+        </video> 
     <div class="background--opacity">
         <header>
             <nav>
@@ -44,23 +43,42 @@
                     <li><a href="#contactme"> Contact</a></li>
                 </ul>
             </nav>
-                <div class="viewport-header">
-                    <!-- Put this in a max-width container -->
-                    <h1><span class="typing"></span></h1>
-                    <!-- taught developer and bootcamp grad. -->
-                        <a class="projects-btn" href="#projects">
-                            <p>See Projects</p>
-                        </a>
-                </div>
-        </header>
-    </div>
-    
-    <section id="projects" class="projects--wrapper">
-        <article class="card">
-            <div class="">
-                Projects
+            <div class="typing--wrapper">
+                <!-- Put this in a max-width container -->
+                <h1><span class="typing"></span></h1>
+                <!-- taught developer and bootcamp grad. -->
+                <a class="projects-btn" href="#projects">
+                    <p>See Projects</p>
+                </a>
             </div>
-        </article>
+        </header>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects--wrapper primary">
+            <h4 class="projects--headline">Portfolio Projects</h4>
+            <div class="cards--wrapper">
+                <div class="card">
+                    <!-- <h4>Round Hounds: Burgers & Fries</h4> -->
+                        <img src="/images/round_hounds.gif" alt="round hounds">
+                    <div class="card--content">
+                        <p class="mvp">
+                            MVP landing page with API intergration
+                        </p>
+                        <p class="express">Express</p>
+                        <p>Node</p>
+                        <p>Mailchimp API</p>
+                        <p>Stripe API</p>
+                    </div>
+                    <a class="projects-btn"
+                        href="https://github.com/machinesandpixels/round-hounds">
+                        Source Code
+                    </a>
+                </div>
+                <div class="card">
+                    Projects
+                </div>
+            </div>
     </section>
 
     <!-- <section id="projects" class="container">
@@ -104,8 +122,11 @@
                 </div>
             </main>
             
-            <aside class="primary">
+            <aside class="primary popup">
                 <img class="bioImage" src="/images/bio_image.jpg" alt="">
+                <div class="middle">
+                    <!-- <div class="text">John Doe</div> -->
+                </div>
             </aside>
     </section>
 

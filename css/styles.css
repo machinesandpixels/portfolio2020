@@ -32,21 +32,21 @@ video {
     position: absolute; 
 }
 
+section{
+    /* Remove height and width after I fix about section */
+    height: 100vh; 
+    width: 100%;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+h4{
+    font-size: 2.3rem;
+}
+
 .background--opacity{
     background: rgb(7, 7, 241);
     height: 100vh;
-    width: 100vw;
     opacity: 0.7;
-    
-   /* background: #0768DE; */
-    /* fallback for old browsers */
-    /* background: #1A2980;   */
-     
-     /* Chrome 10-25, Safari 5.1-6 */
-    /* background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);   */
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background: linear-gradient(to right, #26D0CE, #1A2980); */
-
 }
 
 .navbar{
@@ -54,13 +54,12 @@ video {
     flex-direction: row;
     justify-content: flex-end;
     font-size: 1.5rem;
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 ul li{
     list-style-type:none;
     margin: 0 1rem;
-    color: white;
 }
 
 ul li a{
@@ -73,17 +72,17 @@ a:hover, a:visited, a:link, a:active
     /* color: inherit;  */
 }
 
-.viewport-header {
-    height: 90vh;
+.typing--wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
+    height: 90vh;
     /* max-width: 100px; */
 }
 
-.viewport-header h1{
+.typing--wrapper > h1{
     font-size: 2.5rem;
     margin-top: 2%;
 }
@@ -99,27 +98,81 @@ a:hover, a:visited, a:link, a:active
     text-transform: uppercase;   
 }
 
-section{
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Inter', sans-serif;
-}
-
 .projects--wrapper{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* flex-wrap: wrap; */
     width: 100%;
-    background-color: yellowgreen;
-    padding: 5rem;
+    height: 100vh;
+    /* background-color:goldenrod; */
+    font-weight: 700;
+    background: rgb(246, 247, 250);
+}
+
+.projects--headline{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+   
+}
+
+.cards--wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
 }
 
 .card{
     display: flex;
-    justify-content: center;
-    width: 25%;
-    height: 50%;
-    border-radius: 16px;
-    background-color: rgb(7, 7, 241);
+    flex-direction: column;
+    width: 30%;
+    
+    /* height: 60vh; */
+    border-radius: 6px;
+    /* background-color: blue; */
+    border: 2px dotted blue;
+    filter: drop-shadow(0 0 1rem grey);
+    /* filter: drop-shadow(0 0 0.6rem grey); */
+    text-align: center;
+    line-height: 1.7;
+    /* color: black; */
+    margin: 1.5rem;
+    min-width: 400px;
+}
+
+
+.card h4 {
+    font-size: 1.6rem;
+    /* font-weight: 700; */
+    margin-bottom: 1rem;
+}
+
+.card img {
+    width: 81%;
+    /* max-width: 400px; */
+    /* width: 400px; */
+    border-radius:  4px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.card--content{
+    padding: 4%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.express{
+    margin-top: 1rem;
+}
+
+.mvp{
+    font-weight: 700;
 }
 
 .primary{
@@ -169,10 +222,6 @@ section > .bioText{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.bioImage:hover{
-    opacity: 0.9;
-}
-
 .aboutBtn{
     display: flex;
     justify-content: center;
@@ -204,6 +253,46 @@ section > .bioText{
 .contact > p{
     padding: 2rem;
 }
+
+.popup {
+    position: relative;
+}
+  
+  /* .image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    display: block;
+    width: 100%;
+    height: auto;
+  } */
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .popup:hover .bioImage {
+    opacity: 0.8;
+  }
+  
+  .popup:hover .middle {
+    opacity: 1;
+  }
+/*   
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  } */
 
 @media (max-width: 1024px){
     .navbar{
