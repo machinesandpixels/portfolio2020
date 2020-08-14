@@ -161,6 +161,7 @@ a:hover, a:visited, a:link, a:active
     color: var(--text-color);
 }
 
+/* About Section */
 .about--wrapper{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -180,20 +181,23 @@ a:hover, a:visited, a:link, a:active
 .about--content{
     display: flex;
     flex-wrap: wrap;
-    max-width: 790px;
+    max-width: 990px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .about--wrapper article{
     height: 50%;
-    width: 500px;
-    padding: 0 4rem 0 0;
-    /* padding: 2rem; */
-    /* background-color: rgb(160, 39, 39); */
+    /* width: 500px;
+    padding: 0 4rem 0 0; */
+
+    padding: 1.5rem;
+    background-color: rgb(160, 39, 39);
 }
 
 .about--wrapper aside{
+   margin: 0 auto;
     height: 50%;
-    /* background-color: rgb(24, 1, 1); */
+    background-color: rgb(24, 1, 1);
 }
 
 .icon {
@@ -215,13 +219,14 @@ a:hover, a:visited, a:link, a:active
 } */
 
 .about--text{
-    width: 100%;
+    /* width: 100%; */
     font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.19);
 }
 
 .about--text p {
     margin-left: auto;
-    max-width: 450px;
+    /* max-width: 450px; */
 }
 
 .bioImage{
@@ -244,11 +249,11 @@ a:hover, a:visited, a:link, a:active
 
 .uparrow{
     position: absolute;
-    bottom: 50px;
+    bottom: -2px;
 }
 
 .more-height{
-    bottom: 380px;
+    bottom: 400px;
 }
 
 .contact{
@@ -312,18 +317,27 @@ a:hover, a:visited, a:link, a:active
   } */
 
 @media (max-width: 1024px){
-    /* .navbar{
+    .navbar{
+       display: none;
+    }
+
+    .typing{
+        font-size: 2rem;
+     }
+     .uparrow{
         display: none;
-    } */
-    .viewport-header{
+    }
+}
+
+@media (max-width: 736px){
+   
+    .contact{
         font-size: 1rem;
     }
 }
 
- @media (max-width: 667px){
-    .navbar{
-        display: none;
-    }
+@media (max-width: 667px){
+
     h1{
         text-align: center;
     }
@@ -333,13 +347,7 @@ a:hover, a:visited, a:link, a:active
     .projectsBtn{
         padding: .3rem .7rem;
     }
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .container aside{
-        height: 125%;
-    }
+ 
     .icon > img {
         margin-top: 1rem;
         height: 80px;
@@ -348,7 +356,13 @@ a:hover, a:visited, a:link, a:active
         max-width: 400px;
         text-align: center;
     }
- }
+
+    .contact{
+        margin-top: 3.5rem;
+        font-size: .7rem;
+        height: 15vh;
+    }
+}
 
  /* font-size 1.2 when it's mid-size */
 
