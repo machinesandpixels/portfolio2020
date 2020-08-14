@@ -20,6 +20,7 @@
     <title>Machines & Pixels | Jesus Quezada </title>
 </head>
 <body>
+    <!-- Header and Nav Content -->
     <section>
         <!-- 
             Background video from Pexels.com
@@ -34,124 +35,131 @@
             loop
         >
         </video> 
-    <div class="background--opacity">
-        <header>
-            <nav>
-                <ul class="navbar">
-                    <li><a class="about" href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contactme"> Contact</a></li>
-                </ul>
-            </nav>
-            <div class="typing--wrapper">
-                <!-- Put this in a max-width container -->
-                <h1><span class="typing"></span></h1>
-                <!-- taught developer and bootcamp grad. -->
-                <a class="projects-btn" href="#projects">
-                    <p>See Projects</p>
-                </a>
-            </div>
-        </header>
+        <div class="background--opacity">
+            <header>
+                <nav>
+                    <ul class="navbar">
+                        <li><a class="about" href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contactme"> Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="typing--wrapper">
+                    <!-- Put this in a max-width container -->
+                    <h1><span class="typing"></span></h1>
+                    <!-- taught developer and bootcamp grad. -->
+                    <a class="projects-btn" href="#projects">
+                        <p>See Projects</p>
+                    </a>
+                </div>
+            </header>
         </div>
     </section>
-    
+    <!-- Projects Content -->
     <section id="projects" class="projects--wrapper primary">
-            <h4 class="projects--headline">Portfolio Projects</h4>
-            <div class="cards--wrapper">
+        <div class="uparrow more-height">
+            <a href="">
+                <i class="fa fa-3x fa-angle-up primary" aria-hidden="true"></i>
+            </a>
+        </div>
+        <h4 class="projects--headline">Portfolio Projects</h4>
+        <div class="cards--wrapper">
                 <div class="card">
-                    <!-- <h4>Round Hounds: Burgers & Fries</h4> -->
                         <img src="/images/round_hounds.gif" alt="round hounds">
                     <div class="card--content">
-                        <p class="mvp">
-                            MVP landing page with API intergration
+                        <p class="content--headline">
+                            MVP landing page with API integration
                         </p>
-                        <p class="express">Express</p>
+                        <p>Express</p>
                         <p>Node</p>
                         <p>Mailchimp API</p>
                         <p>Stripe API</p>
                     </div>
-                    <a class="projects-btn"
+                    <a class="projects-btn btn--blue btn--small"
                         href="https://github.com/machinesandpixels/round-hounds">
                         Source Code
                     </a>
                 </div>
                 <div class="card">
-                    Projects
+                    <img src="/images/round_hounds.gif" alt="round hounds">
+                <div class="card--content">
+                    <p class="content--headline">
+                        Real Estate app with Signup / Login form
+                    </p>
+                    <p>Django</p>
+                    <p>Python</p>
+                    <p>Bootstrap</p>
+                    <p>jQuery</p>
                 </div>
+                <a class="projects-btn btn--blue btn--small"
+                    href="https://github.com/machinesandpixels/zadaslisting">
+                    Source Code
+                </a>
             </div>
+        </div>
     </section>
-
-    <!-- <section id="projects" class="container">
-        <main class="primary">
-            <h1>Project: 1</h1>
-            <p>React / Node</p>
-        </main>
-    </section> -->
-
-    <section>
-        <h1>Project: 2</h1>
-    </section>
-    
-    <section id="about" class="container">
-            <main class="primary bioText">
-                <p>
-                After many years of working unfulfilling, 
-                low paying jobs.
-                <br/>
-                I decided to stop settling and become a Developer.
-                </p>
-                <br>
-                <div class="icon">
-                    <img
-                        src="/images/javascript.png" 
-                        alt="JavaScript"
-                    >
-                    <img
-                        src="/images/nodejs.png" 
-                        alt="Node"
-                    >
-                    <img   
-                        src="/images/react.png" 
-                        alt="React"
-                    >
-                </div>
-                <div class="aboutBtn">
-                <button class="projectsBtn"> 
-                    <a href="#projects">See Projects</a>
-                </button>
-                </div>
-            </main>
+    <!-- About Content -->
+    <section id="about" class="about--wrapper">
+        <div class="uparrow">
+            <a href="">
+                <i class="fa fa-3x fa-angle-up primary" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="about--content">
+            <article>
+                    <div class="about--text">
+                        <p>
+                        After many years of unfulfilling work.
+                        I decided to stop settling and become a Developer.
+                        Whether Front-End or Backend, I'm motivated to produce results and iterate continuous improvement. 
+                        </p>
+                        <br>
+                    </div>
+                    <div class="icon">
+                        <img
+                            src="/images/javascript.png" 
+                            alt="JavaScript"
+                        >
+                        <img
+                            src="/images/nodejs.png" 
+                            alt="Node"
+                        >
+                        <img   
+                            src="/images/react.png" 
+                            alt="React"
+                        >
+                    </div>
+                    <div class="aboutBtn">
+                        <a 
+                        class="projects-btn btn--blue" 
+                        href="#projects">
+                            See Projects
+                        </a>
+                    </div>
+            </article>
             
-            <aside class="primary popup">
+        <aside class="primary popup">
                 <img class="bioImage" src="/images/bio_image.jpg" alt="">
                 <div class="middle">
                     <!-- <div class="text">John Doe</div> -->
                 </div>
-            </aside>
+        </aside>
+        </div>
     </section>
 
-    <div class="uparrow">
-        <a href="">
-            <i class="fa fa-2x fa-angle-up" aria-hidden="true"></i>
-        </a>
-    </div>
-
     <footer id="contactme" class="contact">
-        <p>
-            <i class="fa fa-2x fa-github-square"aria-hidden="true">
-            </i>
-            <a href="https://github.com/machinesandpixels">
+        <i class="fa fa-2x fa-github-square"aria-hidden="true"></i>
+            <a 
+            class="secondary" 
+            href="https://github.com/machinesandpixels">
                 Machines&Pixels
             </a>
-        <p>
-        
-        <p>
-            <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:415quezada@gmail.com">
+        <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+            <a 
+            class="secondary" 
+            href="mailto:415quezada@gmail.com">
                 415quezada@gmail.com
             </a>
-        </p>
     </footer>
-
 </body>
 </html>
