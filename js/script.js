@@ -18,6 +18,24 @@ if (/Edge/.test(navigator.userAgent)) {
     transform: translate(-50%, -50%); */
 }
 
+// Scrolls to about section after Six seconds.
+// setTimeout(()=> { scrollDown(1860); }, 6000);
+function x(){
+  setTimeout(()=> { alert('hello'); }, 6000);
+}
+
+// called when the window is scrolled.
+window.onscroll = (e) => {  
+  
+  if (e){
+    console.log(e);
+    console.log('Scrolled!');
+    return
+  }
+  
+  x();
+} 
+
 const letters = document.querySelector('.typing');
 const about = document.querySelector('.about');
 const icon = document.querySelector('.icon');
@@ -69,3 +87,7 @@ function removePulse(event){
   element.classList.remove("animate__pulse");
   element.classList.remove("animate__fast");
 }
+
+// function scrollDown(seconds) {
+//   window.scrollBy(0,seconds);
+// }
