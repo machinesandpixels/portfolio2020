@@ -42,11 +42,14 @@ const icon = document.querySelector('.icon');
 
 // Event Listeners
 about.addEventListener('click', animateAbout);
-icon.addEventListener('mouseover', addPulse);
-icon.addEventListener('mouseout', removePulse);
+
 document.querySelectorAll('.projects-btn').forEach(btn => {
   btn.addEventListener('mouseover', addPulse);
   btn.addEventListener('mouseout', removePulse);
+});
+document.querySelectorAll('.icon').forEach(icon => {
+  icon.addEventListener('mouseover', addPulse);
+  icon.addEventListener('mouseout', removePulse);
 });
 
 // Typing effect
@@ -66,12 +69,18 @@ typeWriter();
 
 // Functions for event listeners
 function animateAbout(){
-  let h1 = document.querySelector('.about--text > p');
-  let img = document.querySelector('.bioImage');
-  h1.classList.add("animate__animated");
-  h1.classList.add("animate__fadeInLeft");
+  let p = document.querySelector('.about-text');
+  let img = document.querySelector('.bio-image');
+  let icons = document.querySelector('.icon--wrapper');
+  let btn = document.querySelector('.projects-btn');
+  p.classList.add("animate__animated");
+  p.classList.add("animate__fadeInLeft");
   img.classList.add("animate__animated");
   img.classList.add("animate__fadeInRight");
+  icons.classList.add("animate__animated");
+  icons.classList.add("animate__fadeInLeft");
+  btn.classList.add("animate__animated");
+  btn.classList.add("animate__fadeInRight");
 }
 
 function addPulse(event){
