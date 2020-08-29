@@ -120,7 +120,6 @@ section{
     margin-top: 1rem;
     justify-content: center;
     align-items: center;
-    background-color: green;
 }
 
 .card{
@@ -172,21 +171,14 @@ section{
 .about-text{
     font-size: 1.4rem;
     line-height: 1.3;
-    /* background-color: violet; */
 }
 
 .bio-image{
-    /* height: 200px;
-    width: 200px; */
-    /* height: 100vh;
-    width: 100vw; */
-    max-height: 200px;
     max-width: 200px;
 }
 
 .about--btn{
     display: flex;
-    /* background-color: turquoise; */
 }
 
 .icon--wrapper{
@@ -196,8 +188,6 @@ section{
 
 .icon {
     max-width: 120px;
-    /* background-color: slateblue; */
-    /* height: 120px; */
     padding: .5rem;
     filter: drop-shadow(0 0 0.3rem var(--text-color));
 }
@@ -249,18 +239,9 @@ section{
 .popup {
     position: relative;
 }
-  
-  /* .image {
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
 
-    display: block;
-    width: 100%;
-    height: auto;
-  } */
   
-  .middle {
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -269,22 +250,16 @@ section{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
   
-  .popup:hover .bioImage {
+.popup:hover .bioImage {
     opacity: 0.8;
-  }
+}
   
-  .popup:hover .middle {
+.popup:hover .middle {
     opacity: 1;
-  }
-/*   
-  .text {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-  } */
+}
+
 
 @media (max-width: 1024px){
     .navbar{
