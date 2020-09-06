@@ -81,6 +81,10 @@ a:hover, a:visited, a:link, a:active
     margin-top: 2%;
 }
 
+.typing > .txt{
+    border-right: 0.2rem solid whitesmoke;
+}
+
 .projects-btn{
     background-color: rgb(241, 247, 246);
     border-radius: 5rem;
