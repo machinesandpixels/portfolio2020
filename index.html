@@ -4,107 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Sarala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <!-- Animate.CSS -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles.CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
     <script defer src="js/script.js"></script>
-    <title>Machines & Pixels</title>
+
+    <title>Machines & Pixels | Jesus Quezada </title>
 </head>
 <body>
-
-     <!-- The playsinline attribute is so this works on iOS  -->
-
-     <!-- 
-         Background video from Pexels.com
-        https://www.pexels.com/video/typing-on-a-macbook-853765/ 
-    -->
-    <video id="video"
-        poster="media/background_still.png" 
-        src="media/Typing On A Macbook.mp4"
-        playsinline 
-        autoplay 
-        muted 
-        loop
-    >
-    </video> 
-    
-    <div class="headerOpacity">
-        <header>
-            <nav>
-                <ul class="navbar">
-                    <li><a class="about" href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contactme"> Contact</a></li>
-                </ul>
-                
-            </nav>
-                <div class="viewport-header">
-                    <!-- Put this in a max-width container -->
-                    <h1><span class="typing"></span></h1>
-                    <!-- taught developer and bootcamp grad. -->
-                    <button class="projectsBtn"> 
-                        <a href="#projects">See Projects</a>
-                    </button>
-                </div>
-        </header>
-    </div>
-
-    <section id="projects" class="container">
-        <main class="primary">
-            <h1>Project: 1</h1>
-            <p>React / Node</p>
-        </main>
-    </section>
-
+    <!-- Header and Nav -->
     <section>
-        <h1>Project: 2</h1>
+        <!-- 
+            Background video from Pexels.com
+            https://www.pexels.com/video/typing-on-a-macbook-853765/ 
+            -->
+        <video 
+            poster="media/background_still.png" 
+            src="media/Typing On A Macbook.mp4"
+            playsinline 
+            autoplay 
+            muted 
+            loop
+        >
+        </video> 
+        <div class="background--opacity">
+            <header>
+                <nav>
+                    <ul class="navbar">
+                        <li><a class="about" href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contactme"> Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="typing--wrapper">
+                    <h1>
+                        <span>Hi,
+                            <span class="typing" data-wait="50" 
+                            data-words='["my name is Jesus Quezada", "I am a self-taught developer", "I am a QA Tester"]'>
+                            </span>
+                        </span>
+                    </h1>
+                    <a class="projects-btn" href="#projects">
+                        See Projects
+                    </a>
+                </div>
+            </header>
+        </div>
     </section>
-
-    <section id="about" class="container">
-            <main class="primary bioText">
-                <p>
-                After many years of working unfulfilling, 
-                low paying jobs.
-                <br/>
-                I decided to stop settling and become a Developer.
-                </p>
-                <br>
-                <div class="icon">
-                    <img
-                        src="/images/javascript.png" 
-                        alt="JavaScript"
-                    >
-                    <img
-                        src="/images/nodejs.png" 
-                        alt="Node"
-                    >
-                    <img   
-                        src="/images/react.png" 
-                        alt="React"
-                    >
+    <!-- Projects -->
+    <section id="projects" class="primary arrow--wrapper">
+        <div class="arrow">
+            <a href="">
+                <i class="fa fa-3x fa-angle-up primary" aria-hidden="true"></i>
+            </a>
+        </div>
+        <h4 class="projects--headline">Portfolio Projects</h4>
+        <div class="cards--wrapper">
+            <div class="card">
+                <img src="/images/round_hounds.gif" alt="roundhounds">
+                    <div class="card--content">
+                        <p class="content--headline">
+                            MVP landing page with API integration
+                        </p>
+                        <p>Express</p>
+                        <p>Node</p>
+                        <p>Mailchimp API</p>
+                        <p>Stripe API</p>
+                    </div>
+                    <a class="projects-btn btn-small"
+                        href="https://github.com/machinesandpixels/round-hounds">
+                        Source Code
+                    </a>
+            </div>
+            <div class="card">
+                <img src="/images/zadaslistings.gif" alt="zadaslisting">
+                <div class="card--content">
+                    <p class="content--headline">
+                        Rental Listing app with Signup / Login form
+                    </p>
+                    <p>Django</p>
+                    <p>Python</p>
+                    <p>Bootstrap</p>
+                    <p>jQuery</p>
                 </div>
-                <div class="aboutBtn">
-                <button class="projectsBtn"> 
-                    <a href="#projects">See Projects</a>
-                </button>
-                </div>
-            </main>
-            
-            <aside class="primary">
-                <img class="bioImage" src="/images/bio_image.jpg" alt="">
-            </aside>
-            <hr/>
+                <a class="projects-btn btn-small"
+                    href="https://github.com/machinesandpixels/zadaslisting">
+                    Source Code
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="arrow--wrapper">
+        <div class="arrow">
+                <a href="">
+                    <i class="fa fa-3x fa-angle-up primary" aria-hidden="true"></i>
+                </a>
+        </div>
+        <div class="about--grid">
+            <div>
+                <p  class="about-text">
+                    After many years of unfulfilling work.
+                    I decided to stop settling and become a Developer.
+                    Whether Front-End or Backend. I'm motivated to produce results quickly and iterate continuous improvement through learning the latest Frameworks and end to end testing.
+                </p>                
+            </div>
+            <div>
+                <img class="bio-image" src="/images/bio_image.jpg" alt="bio image">
+            </div>
+            <div class="icon--wrapper">
+                <img
+                    class="icon"
+                    src="/images/javascript.png" 
+                    alt="JavaScript"
+                >
+                <img
+                    class="icon"
+                    src="/images/nodejs.png" 
+                    alt="Node"
+                >
+                <img 
+                    class="icon"  
+                    src="/images/react.png" 
+                    alt="React"
+                >
+            </div>
+            <div class="about--btn">
+                <a class="projects-btn btn-small" href="#projects">
+                    See Projects
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer id="contactme" class="contact">
-        <h1>email address</h1>
+        <i class="fa fa-2x fa-github-square"aria-hidden="true"></i>
+            <a 
+            class="secondary" 
+            href="https://github.com/machinesandpixels">
+                Machines&Pixels
+            </a>
+        <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+            <a 
+            class="secondary" 
+            href="mailto:415quezada@gmail.com">
+                415quezada@gmail.com
+            </a>
     </footer>
-
 </body>
 </html>
