@@ -286,6 +286,9 @@ section{
     .contact{
         font-size: 1rem;
     }
+    .content--headline{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 667px){
@@ -300,7 +303,12 @@ section{
     .projectsBtn{
         padding: .3rem .7rem;
     }
- 
+    .content--headline{
+        font-size: .8rem;
+    }
+    .card--content{
+        font-size: .9rem;
+    }
     .icon > img {
         margin-top: 1rem;
         height: 80px;
