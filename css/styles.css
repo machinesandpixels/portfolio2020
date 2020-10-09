@@ -163,11 +163,10 @@ section{
 /* About Section -------------------------------------- */
 .about--grid{
     display: grid;
-    grid-template-columns: minmax(auto,28vw) minmax(auto, 13vw);
-    /* grid-template-columns: minmax(auto,500px) minmax(auto, 200px); */
+    grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw);
+    /* grid-template-columns: minmax(auto,450px) minmax(auto, 200px); */
     grid-gap: 2rem;
     justify-content: center;
-    /* justify-items: center; */
     align-content: center;
     height: 100vh;
 }
@@ -185,15 +184,27 @@ section{
     display: flex;
 }
 
+/* Styling for icons: JavaScript, Node, React */
 .icon--wrapper{
     display: flex;
     justify-content: space-between;
 }
 
 .icon {
-    max-width: 120px;
+    max-width: 115px;
     padding: .5rem;
-    filter: drop-shadow(0 0 0.3rem var(--text-color));
+}
+
+.js{
+    filter: drop-shadow(0 0 0.5rem rgb(163, 163, 25));
+}
+
+.node{
+    filter: drop-shadow(0 0 0.5rem rgb(37, 170, 37));
+}
+
+.react{
+    filter: drop-shadow(0 0 0.5rem rgb(31, 118, 175));
 }
 
 /* Left line */
@@ -286,7 +297,7 @@ section{
     .about--grid{
         grid-template-columns: minmax(auto,400px);
     }
-   
+
     .contact{
         font-size: 1rem;
     }
