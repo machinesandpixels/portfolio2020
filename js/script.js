@@ -1,22 +1,5 @@
-// Check if browser is Edge
-if (/Edge/.test(navigator.userAgent)) {
-  alert('Hello Microsoft User!');
-  let video = document.getElementById("video");
-  // video.style.minHeight = '100%';
-  // video.style.minWidth = "100%";
-  // video.style.height = auto;
-  // video.style.weight = auto;
-  // video.style.left = '50%';
-  // video.style.top = '50%';
-  // video.style.transform = 'translate(-50%, -50%)';
-     /* min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
-}
+// Init on load
+document.addEventListener('DOMContentLoaded', init);
 
 class TypeWriter{
   constructor(txtSpan, words, wait = 500){
@@ -29,7 +12,7 @@ class TypeWriter{
     this.isDeleting = false;
   }
  
-  type(){
+  type() {
     const index = this.wordIndex % this.words.length;
     const fullTxt = this.words[index];
   
@@ -69,8 +52,6 @@ class TypeWriter{
   }
  
 }
-// Init on load
-document.addEventListener('DOMContentLoaded', init);
 
 // Scrolls to about section after Six seconds.
 // setTimeout(()=> { scrollDown(1860); }, 6000);
@@ -92,14 +73,22 @@ window.onscroll = (e) => {
 
 const about = document.querySelector('.about');
 const icon = document.querySelector('.icon');
+// const btn = document.querySelector('.btn-hover');
 
 // Event Listeners
 about.addEventListener('click', animateAbout);
+
+// btn.addEventListener('mouseover', () => {
+//   let background = document.querySelector('.background--opacity');
+//   background.style.background = 'rgb(1, 1, 125)';
+//   background.style.opacity = 0.9;
+// })
 
 document.querySelectorAll('.projects-btn').forEach(btn => {
   btn.addEventListener('mouseover', addPulse);
   btn.addEventListener('mouseout', removePulse);
 });
+
 document.querySelectorAll('.icon').forEach(icon => {
   icon.addEventListener('mouseover', addPulse);
   icon.addEventListener('mouseout', removePulse);
@@ -108,9 +97,9 @@ document.querySelectorAll('.icon').forEach(icon => {
 
 // Functions for event listeners
 function init(){
-  const typing = document.querySelector('.typing');
-  const words = JSON.parse(typing.getAttribute('data-words'));
-  const wait = typing.getAttribute('data-wait');
+  let typing = document.querySelector('.typing');
+  let words = JSON.parse(typing.getAttribute('data-words'));
+  let wait = typing.getAttribute('data-wait');
   new TypeWriter(typing, words, wait);
 }
 

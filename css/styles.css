@@ -39,6 +39,7 @@ h4{
 
 /* Header Section -------------------- */
 .background--opacity{
+    /* background: rgb(1, 1, 75); */
     background: rgb(7, 7, 241);
     height: 100vh;
     opacity: 0.7;
@@ -139,8 +140,12 @@ section{
     max-width: 380px;
     min-width: 250px;
     /* width: 380px; */
-    height: 470px;
+    max-height: 470px;
     padding: 2rem; 
+}
+
+.card > img {
+    max-height: 215px;
 }
 
 .card--content{
@@ -163,8 +168,8 @@ section{
 /* About Section -------------------------------------- */
 .about--grid{
     display: grid;
-    grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw);
-    /* grid-template-columns: minmax(auto,450px) minmax(auto, 200px); */
+    /* grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw); */
+    grid-template-columns: minmax(auto,450px) minmax(auto, 200px);
     grid-gap: 2rem;
     justify-content: center;
     align-content: center;
@@ -177,7 +182,7 @@ section{
 }
 
 .bio-image{
-    max-width: 200px;
+    max-width: 170px;
 }
 
 .about--btn{
@@ -246,7 +251,6 @@ section{
     padding: 1rem;
 }
 
-
 .secondary {
     color: white;
 }
@@ -254,7 +258,6 @@ section{
 .popup {
     position: relative;
 }
-
   
 .middle {
     transition: .5s ease;
@@ -284,29 +287,38 @@ section{
     .typing{
         font-size: 2rem;
      }
-     .uparrow{
+
+    .uparrow, .arrow{
         display: none;
     }
-    #about{
-        margin-top: 35rem;
-    }
+
+    /* #about{
+        margin-top: 25rem;
+    } */
 
 }
 
 @media (max-width: 736px){
     .about--grid{
-        grid-template-columns: minmax(auto,400px);
+        grid-template-columns: minmax(auto,450px);
     }
+
+    /* #about{
+        margin-top: 35rem;
+    } */
 
     .contact{
         font-size: 1rem;
     }
+
     .content--headline{
         font-size: 1rem;
     }
+
     #about > .arrow{
         display: none;
     }
+
     .image--wrapper{
         display: flex;
         justify-content: center;
@@ -319,30 +331,54 @@ section{
         text-align: center;
         max-width: 400px;
     }
-    .typing{
-        font-size: 2rem;
-     }
-    .projectsBtn{
-        padding: .3rem .7rem;
+
+    h1 > span{
+        font-size: 1.7rem;
     }
+
+    .typing--wrapper{
+        height: 100vh;
+    }
+
+    .typing{
+        font-size: 1.7rem;
+     }
+
+    .projects-btn{
+        padding: .6rem 1.8rem;
+    }
+
+    .projects--headline{
+        font-size: 1.7rem;
+    }
+
     .content--headline{
         font-size: .8rem;
     }
+
     .card--content{
         font-size: .9rem;
     }
+
     .icon > img {
         margin-top: 1rem;
         height: 80px;
-    }       
-    .about--text{
-        max-width: 400px;
-        text-align: center;
+    } 
+
+    .about-text{
+        max-width: 290px;
+        text-align: left;
+        font-size: 1.2rem;
+        margin: auto;
+    }
+
+    .icon{
+        max-width: 100px;
     }
 
     .contact{
         margin-top: 3.5rem;
-        font-size: .7rem;
+        font-size: .8rem;
         height: 15vh;
     }
 }
