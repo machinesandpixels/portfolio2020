@@ -198,7 +198,6 @@ a:hover, a:visited, a:link, a:active{
 
 .icon {
     max-width: 115px;
-    max-height: 115px;
     padding: .5rem;
 }
 
@@ -309,12 +308,15 @@ a:hover, a:visited, a:link, a:active{
     .about--grid{
         display: flex;
         flex-direction: column;
-        align-content: center;
         margin: 0 auto;
         max-width: 80vw;
         max-width: calc(var(--vw, 1vw) * 80);
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
+    }
+
+    .bio-image, .icon {
+        margin-bottom: 1.5rem;
     }
 
     .about-text{
@@ -346,11 +348,10 @@ a:hover, a:visited, a:link, a:active{
         font-size: .9rem;
     }
 
-    /* .icon > img {
+    .icon--wrapper > img {
         margin-top: 1rem;
         height: 80px;
-        background-color: turquoise;
-    }  */
+    } 
 
     /* .about-text{
         width: 80vw;
