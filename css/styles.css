@@ -15,15 +15,11 @@ html {
 body{
     background: rgb(246, 247, 250);
     font-family:'BlenderPro-Medium';
-   
-    /* Hides horizontal scroll */
-    overflow-x: hidden;
-   
-    /* //Internet Explorer, Edge */
-    /* -ms-overflow-style: none; */
-    
-     /* Hides both vertical and horizontal  scroll */
-    /* overflow: hidden; */
+    overflow-x: hidden;   /* Hides horizontal scroll */
+}
+
+section{
+    min-height: 100vh;
 }
 
 video {
@@ -39,7 +35,6 @@ h4{
 
 /* Header Section -------------------- */
 .background--opacity{
-    /* background: rgb(1, 1, 75); */
     background: rgb(7, 7, 241);
     height: 100vh;
     opacity: 0.7;
@@ -62,8 +57,7 @@ ul li a{
     color: white;
 }
 
-a:hover, a:visited, a:link, a:active
-{
+a:hover, a:visited, a:link, a:active{
     text-decoration: none;
 }
 
@@ -74,7 +68,6 @@ a:hover, a:visited, a:link, a:active
     justify-content: center;
     color: white;
     height: 90vh;
-    /* max-width: 100px; */
 }
 
 .typing--wrapper > h1{
@@ -97,7 +90,6 @@ a:hover, a:visited, a:link, a:active
     text-transform: uppercase;   
 }
 
-
 .btn-small{
     background-color: var(--text-color);
     color: rgb(241, 247, 246);
@@ -105,13 +97,10 @@ a:hover, a:visited, a:link, a:active
     align-self: center;
 }
 
-section{
-    min-height: 100vh;
-}
-
 .fixed{
     padding-top: 35rem;
 }
+
 /* Projects Section --------------------------- */
 .projects--headline{
     text-align: center;
@@ -139,7 +128,6 @@ section{
     margin: 1.5rem;
     max-width: 380px;
     min-width: 250px;
-    /* width: 380px; */
     max-height: 470px;
     padding: 2rem;
 }
@@ -212,12 +200,6 @@ section{
     filter: drop-shadow(0 0 0.5rem rgb(31, 118, 175));
 }
 
-/* Left line */
-/* .about--text{
-    border-left: var(--text-color) solid 2px;
-    padding-left: 50px;
-} */
-
 .btn--blue{
     background-color: var(--text-color);
     color: whitesmoke;
@@ -240,6 +222,7 @@ section{
     background-color: var(--text-color);
     font-family: 'Inter', sans-serif;
     height: 25vh;
+    min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,8 +238,9 @@ section{
     color: white;
 }
 
-
+/* Media Queries */
 @media (max-width: 1024px){
+
     .navbar{
        display: none;
     }
@@ -268,6 +252,7 @@ section{
 }
 
 @media (max-width: 736px){
+
     .about--grid{
         grid-template-columns: minmax(auto,450px);
     }
@@ -282,6 +267,10 @@ section{
 
     #about > .arrow{
         display: none;
+    }
+
+    .icon--wrapper{
+        justify-content: center;
     }
 
     .image--wrapper{
@@ -350,8 +339,30 @@ section{
 }
 
 @media (max-width: 490px){
+    
     .about-text{
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 320px){
+
+    .card{
+        min-width: 220px;
+    }
+    
+    .about-text{
+        margin-top: 4rem;
+    }
+
+    .icon{
+        max-width: 80px;
+    }
+
+    .contact{
+        margin-top: 7rem;
+        font-size: .6rem;
+        height: 15vh;
     }
 }
 

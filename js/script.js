@@ -22,7 +22,7 @@ class TypeWriter{
       this.txt = fullTxt.substring(0, this.txt.length - 1);
     }
     else{
-      // Add char
+      // Add character
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
   
@@ -53,36 +53,11 @@ class TypeWriter{
  
 }
 
-// Scrolls to about section after Six seconds.
-// setTimeout(()=> { scrollDown(1860); }, 6000);
-function x(){
-  setTimeout(()=> { alert('hello'); }, 6000);
-}
-
-// called when the window is scrolled.
-window.onscroll = (e) => {  
-  
-  if (e){
-    console.log(e);
-    console.log('Scrolled!');
-    return
-  }
-  
-  x();
-} 
-
 const about = document.querySelector('.about');
 const icon = document.querySelector('.icon');
-// const btn = document.querySelector('.btn-hover');
 
 // Event Listeners
 about.addEventListener('click', animateAbout);
-
-// btn.addEventListener('mouseover', () => {
-//   let background = document.querySelector('.background--opacity');
-//   background.style.background = 'rgb(1, 1, 125)';
-//   background.style.opacity = 0.9;
-// })
 
 document.querySelectorAll('.projects-btn').forEach(btn => {
   btn.addEventListener('mouseover', addPulse);
@@ -93,7 +68,6 @@ document.querySelectorAll('.icon').forEach(icon => {
   icon.addEventListener('mouseover', addPulse);
   icon.addEventListener('mouseout', removePulse);
 });
-
 
 // Functions for event listeners
 function init(){
@@ -132,9 +106,7 @@ function removePulse(event){
   element.classList.remove("animate__fast");
 }
 
-// function scrollDown(seconds) {
-//   window.scrollBy(0,seconds);
-// }
+
 
 
 
