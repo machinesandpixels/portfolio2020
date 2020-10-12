@@ -106,7 +106,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .fixed{
@@ -141,7 +141,7 @@ section{
     min-width: 250px;
     /* width: 380px; */
     max-height: 470px;
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 .card > img {
@@ -255,46 +255,15 @@ section{
     color: white;
 }
 
-.popup {
-    position: relative;
-}
-  
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-  
-.popup:hover .bioImage {
-    opacity: 0.8;
-}
-  
-.popup:hover .middle {
-    opacity: 1;
-}
-
 
 @media (max-width: 1024px){
     .navbar{
        display: none;
     }
 
-    .typing{
-        font-size: 2rem;
-     }
-
     .uparrow, .arrow{
         display: none;
     }
-
-    /* #about{
-        margin-top: 25rem;
-    } */
 
 }
 
@@ -302,10 +271,6 @@ section{
     .about--grid{
         grid-template-columns: minmax(auto,450px);
     }
-
-    /* #about{
-        margin-top: 35rem;
-    } */
 
     .contact{
         font-size: 1rem;
@@ -366,9 +331,10 @@ section{
     } 
 
     .about-text{
-        max-width: 290px;
+        width: 80vw;
+        max-width: 450px;
         text-align: left;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: auto;
     }
 
@@ -383,7 +349,9 @@ section{
     }
 }
 
- /* font-size 1.2 when it's mid-size */
+@media (max-width: 490px){
+    .about-text{
+        font-size: 1.2rem;
+    }
+}
 
-    /* Search for better way of changing default color */
-    /* color: green; */
