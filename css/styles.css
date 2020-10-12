@@ -1,6 +1,6 @@
 @font-face{
     font-family:'BlenderPro-Medium';
-    src: url('/fonts/BlenderPro-Medium.ttf') format('opentype');
+    src: url('../fonts/BlenderPro-Medium.ttf') format('opentype');
 }
 
 /* CSS Variables */
@@ -15,15 +15,11 @@ html {
 body{
     background: rgb(246, 247, 250);
     font-family:'BlenderPro-Medium';
-   
-    /* Hides horizontal scroll */
-    overflow-x: hidden;
-   
-    /* //Internet Explorer, Edge */
-    /* -ms-overflow-style: none; */
-    
-     /* Hides both vertical and horizontal  scroll */
-    /* overflow: hidden; */
+    overflow-x: hidden;   /* Hides horizontal scroll */
+}
+
+section{
+    min-height: 100vh;
 }
 
 video {
@@ -61,8 +57,7 @@ ul li a{
     color: white;
 }
 
-a:hover, a:visited, a:link, a:active
-{
+a:hover, a:visited, a:link, a:active{
     text-decoration: none;
 }
 
@@ -73,7 +68,6 @@ a:hover, a:visited, a:link, a:active
     justify-content: center;
     color: white;
     height: 90vh;
-    /* max-width: 100px; */
 }
 
 .typing--wrapper > h1{
@@ -96,7 +90,6 @@ a:hover, a:visited, a:link, a:active
     text-transform: uppercase;   
 }
 
-
 .btn-small{
     background-color: var(--text-color);
     color: rgb(241, 247, 246);
@@ -104,13 +97,10 @@ a:hover, a:visited, a:link, a:active
     align-self: center;
 }
 
-section{
-    height: 100vh;
-}
-
 .fixed{
     padding-top: 35rem;
 }
+
 /* Projects Section --------------------------- */
 .projects--headline{
     text-align: center;
@@ -138,9 +128,12 @@ section{
     margin: 1.5rem;
     max-width: 380px;
     min-width: 250px;
-    /* width: 380px; */
-    height: 470px;
-    padding: 2rem; 
+    max-height: 470px;
+    padding: 2rem;
+}
+
+.card > img {
+    max-height: 215px;
 }
 
 .card--content{
@@ -163,11 +156,10 @@ section{
 /* About Section -------------------------------------- */
 .about--grid{
     display: grid;
-    grid-template-columns: minmax(auto,28vw) minmax(auto, 13vw);
-    /* grid-template-columns: minmax(auto,500px) minmax(auto, 200px); */
+    /* grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw); */
+    grid-template-columns: minmax(auto,450px) minmax(auto, 200px);
     grid-gap: 2rem;
     justify-content: center;
-    /* justify-items: center; */
     align-content: center;
     height: 100vh;
 }
@@ -178,29 +170,35 @@ section{
 }
 
 .bio-image{
-    max-width: 200px;
+    max-width: 170px;
 }
 
 .about--btn{
     display: flex;
 }
 
+/* Styling for icons: JavaScript, Node, React */
 .icon--wrapper{
     display: flex;
     justify-content: space-between;
 }
 
 .icon {
-    max-width: 120px;
+    max-width: 115px;
     padding: .5rem;
-    filter: drop-shadow(0 0 0.3rem var(--text-color));
 }
 
-/* Left line */
-/* .about--text{
-    border-left: var(--text-color) solid 2px;
-    padding-left: 50px;
-} */
+.js{
+    filter: drop-shadow(0 0 0.5rem rgb(163, 163, 25));
+}
+
+.node{
+    filter: drop-shadow(0 0 0.5rem rgb(37, 170, 37));
+}
+
+.react{
+    filter: drop-shadow(0 0 0.5rem rgb(31, 118, 175));
+}
 
 .btn--blue{
     background-color: var(--text-color);
@@ -224,6 +222,7 @@ section{
     background-color: var(--text-color);
     font-family: 'Inter', sans-serif;
     height: 25vh;
+    min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,56 +234,48 @@ section{
     padding: 1rem;
 }
 
-
 .secondary {
     color: white;
 }
 
-.popup {
-    position: relative;
-}
-
-  
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-  
-.popup:hover .bioImage {
-    opacity: 0.8;
-}
-  
-.popup:hover .middle {
-    opacity: 1;
-}
-
-
+/* Media Queries */
 @media (max-width: 1024px){
+
     .navbar{
        display: none;
     }
 
-    .typing{
-        font-size: 2rem;
-     }
-     .uparrow{
+    .uparrow, .arrow{
         display: none;
     }
+
 }
 
 @media (max-width: 736px){
+
     .about--grid{
-        grid-template-columns: minmax(auto,400px);
+        grid-template-columns: minmax(auto,450px);
     }
-   
+
     .contact{
         font-size: 1rem;
+    }
+
+    .content--headline{
+        font-size: 1rem;
+    }
+
+    #about > .arrow{
+        display: none;
+    }
+
+    .icon--wrapper{
+        justify-content: center;
+    }
+
+    .image--wrapper{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -294,30 +285,84 @@ section{
         text-align: center;
         max-width: 400px;
     }
-    .typing{
-        font-size: 2rem;
-     }
-    .projectsBtn{
-        padding: .3rem .7rem;
+
+    h1 > span{
+        font-size: 1.7rem;
     }
- 
+
+    .typing--wrapper{
+        height: 100vh;
+    }
+
+    .typing{
+        font-size: 1.7rem;
+     }
+
+    .projects-btn{
+        padding: .6rem 1.8rem;
+    }
+
+    .projects--headline{
+        font-size: 1.7rem;
+    }
+
+    .content--headline{
+        font-size: .8rem;
+    }
+
+    .card--content{
+        font-size: .9rem;
+    }
+
     .icon > img {
         margin-top: 1rem;
         height: 80px;
-    }       
-    .about--text{
-        max-width: 400px;
-        text-align: center;
+    } 
+
+    .about-text{
+        width: 80vw;
+        max-width: 450px;
+        text-align: left;
+        font-size: 1.4rem;
+        margin: auto;
+    }
+
+    .icon{
+        max-width: 100px;
     }
 
     .contact{
         margin-top: 3.5rem;
-        font-size: .7rem;
+        font-size: .8rem;
         height: 15vh;
     }
 }
 
- /* font-size 1.2 when it's mid-size */
+@media (max-width: 490px){
+    
+    .about-text{
+        font-size: 1.2rem;
+    }
+}
 
-    /* Search for better way of changing default color */
-    /* color: green; */
+@media (max-width: 320px){
+
+    .card{
+        min-width: 220px;
+    }
+    
+    .about-text{
+        margin-top: 4rem;
+    }
+
+    .icon{
+        max-width: 80px;
+    }
+
+    .contact{
+        margin-top: 7rem;
+        font-size: .6rem;
+        height: 15vh;
+    }
+}
+
