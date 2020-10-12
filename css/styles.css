@@ -198,6 +198,7 @@ a:hover, a:visited, a:link, a:active{
 
 .icon {
     max-width: 115px;
+    max-height: 115px;
     padding: .5rem;
 }
 
@@ -316,6 +317,10 @@ a:hover, a:visited, a:link, a:active{
         height: calc(var(--vh, 1vh) * 100);
     }
 
+    .about-text{
+        margin-bottom: 2rem;
+    }
+
     .typing--wrapper{
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
@@ -344,6 +349,7 @@ a:hover, a:visited, a:link, a:active{
     /* .icon > img {
         margin-top: 1rem;
         height: 80px;
+        background-color: turquoise;
     }  */
 
     /* .about-text{
