@@ -162,13 +162,19 @@ a:hover, a:visited, a:link, a:active{
 /* About Section -------------------------------------- */
 .about--grid{
     display: grid;
-    /* grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw); */
     grid-template-columns: minmax(auto,450px) minmax(auto, 200px);
     grid-gap: 2rem;
     justify-content: center;
     align-content: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    max-width: 76%; */
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
+    /* grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw); */
 }
 
 .about-text{
@@ -299,6 +305,17 @@ a:hover, a:visited, a:link, a:active{
         font-size: 1.7rem;
     }
 
+    .about--grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        margin: auto;
+        max-width: 76%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
     .typing--wrapper{
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
@@ -329,18 +346,18 @@ a:hover, a:visited, a:link, a:active{
         height: 80px;
     } 
 
-    .about-text{
+    /* .about-text{
         width: 80vw;
         width: calc(var(--vw, 1vw) * 80);
         max-width: 450px;
         text-align: left;
         font-size: 1.4rem;
         margin: auto;
-    }
+    } */
 
-    .icon{
+    /* .icon{
         max-width: 100px;
-    }
+    } */
 
     .contact{
         margin-top: 3.5rem;
