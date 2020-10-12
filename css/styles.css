@@ -10,6 +10,7 @@
   
 html {
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 
 body{
@@ -20,12 +21,16 @@ body{
 
 section{
     min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 video {
     object-fit: cover;
     height: 100vh;
+    min-height: -webkit-fill-available;
     width: 100vw;
+    min-width: -webkit-fill-available;
     position: absolute; 
 }
 
@@ -37,6 +42,7 @@ h4{
 .background--opacity{
     background: rgb(7, 7, 241);
     height: 100vh;
+    height: -webkit-fill-available;
     opacity: 0.7;
 }
 
@@ -68,6 +74,7 @@ a:hover, a:visited, a:link, a:active{
     justify-content: center;
     color: white;
     height: 90vh;
+    height: -webkit-fill-available;
 }
 
 .typing--wrapper > h1{
@@ -121,6 +128,7 @@ a:hover, a:visited, a:link, a:active{
     display: flex;
     flex-direction: column;
     width: 100vw;
+    width: -webkit-fill-available;
     border-radius: 6px;
     filter: drop-shadow(0 0 1rem grey);
     text-align: center;
@@ -162,6 +170,7 @@ a:hover, a:visited, a:link, a:active{
     justify-content: center;
     align-content: center;
     height: 100vh;
+    height: -webkit-fill-available;
 }
 
 .about-text{
@@ -222,7 +231,9 @@ a:hover, a:visited, a:link, a:active{
     background-color: var(--text-color);
     font-family: 'Inter', sans-serif;
     height: 25vh;
+    height: -webkit-fill-available;
     min-width: 100vw;
+    min-width: -webkit-fill-available;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,6 +303,7 @@ a:hover, a:visited, a:link, a:active{
 
     .typing--wrapper{
         height: 100vh;
+        height: -webkit-fill-available;
     }
 
     .typing{
@@ -321,6 +333,7 @@ a:hover, a:visited, a:link, a:active{
 
     .about-text{
         width: 80vw;
+        width: -webkit-fill-available;
         max-width: 450px;
         text-align: left;
         font-size: 1.4rem;
@@ -335,6 +348,7 @@ a:hover, a:visited, a:link, a:active{
         margin-top: 3.5rem;
         font-size: .8rem;
         height: 15vh;
+        height: -webkit-fill-available;
     }
 }
 
@@ -363,6 +377,7 @@ a:hover, a:visited, a:link, a:active{
         margin-top: 7rem;
         font-size: .6rem;
         height: 15vh;
+        height: -webkit-fill-available;
     }
 }
 
