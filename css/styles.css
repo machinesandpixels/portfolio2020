@@ -20,15 +20,12 @@ body{
 
 section{
     min-height: 100vh;
-    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 video {
     object-fit: cover;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
-    width: calc(var(--vw, 1vw) * 100);
     position: absolute; 
 }
 
@@ -40,7 +37,6 @@ h4{
 .background--opacity{
     background: rgb(7, 7, 241);
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     opacity: 0.7;
 }
 
@@ -126,7 +122,6 @@ a:hover, a:visited, a:link, a:active{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    width: calc(var(--vw, 1vw) * 100);
     border-radius: 6px;
     filter: drop-shadow(0 0 1rem grey);
     text-align: center;
@@ -173,7 +168,6 @@ a:hover, a:visited, a:link, a:active{
     margin: auto;
     max-width: 76%; */
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     /* grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw); */
 }
 
@@ -235,9 +229,7 @@ a:hover, a:visited, a:link, a:active{
     background-color: var(--text-color);
     font-family: 'Inter', sans-serif;
     height: 25vh;
-    height: calc(var(--vh, 1vh) * 25);
     min-width: 100vw;
-    min-width: calc(var(--vw, 1vw) * 100);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,9 +302,7 @@ a:hover, a:visited, a:link, a:active{
         flex-direction: column;
         margin: 0 auto;
         max-width: 80vw;
-        max-width: calc(var(--vw, 1vw) * 80);
         height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
     }
 
     .bio-image, .icon {
@@ -325,7 +315,6 @@ a:hover, a:visited, a:link, a:active{
 
     .typing--wrapper{
         height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
     }
 
     .typing{
@@ -370,7 +359,6 @@ a:hover, a:visited, a:link, a:active{
         margin-top: 3.5rem;
         font-size: .8rem;
         height: 15vh;
-        height: calc(var(--vh, 1vh) * 15);
     }
 }
 
@@ -399,7 +387,6 @@ a:hover, a:visited, a:link, a:active{
         margin-top: 7rem;
         font-size: .6rem;
         height: 15vh;
-        height: calc(var(--vh, 1vh) * 15);
     }
 }
 
