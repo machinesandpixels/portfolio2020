@@ -261,6 +261,7 @@ a:hover, a:visited, a:link, a:active{
 @media (max-width: 736px){
 
     .about--grid{
+        margin-top: 5rem;
         grid-template-columns: minmax(auto,450px);
     }
 
@@ -297,21 +298,21 @@ a:hover, a:visited, a:link, a:active{
         font-size: 1.7rem;
     }
 
-    .about--grid{
+    /* .about--grid{
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         max-width: 80vw;
         height: 100vh;
-    }
+    } */
 
-    .bio-image, .icon {
+    /* .bio-image, .icon {
         margin-bottom: 1.5rem;
-    }
+    } */
 
-    .about-text{
+    /* .about-text{
         margin-bottom: 2rem;
-    }
+    } */
 
     .typing--wrapper{
         height: 100vh;
@@ -338,18 +339,18 @@ a:hover, a:visited, a:link, a:active{
     }
 
     .icon--wrapper > img {
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         height: 80px;
     } 
 
-    /* .about-text{
+    .about-text{
         width: 80vw;
-        width: calc(var(--vw, 1vw) * 80);
+        /* width: calc(var(--vw, 1vw) * 80); */
         max-width: 450px;
         text-align: left;
         font-size: 1.4rem;
         margin: auto;
-    } */
+    }
 
     /* .icon{
         max-width: 100px;
