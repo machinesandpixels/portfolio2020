@@ -14,7 +14,7 @@ html {
 
 body{
     background: rgb(246, 247, 250);
-    font-family:'BlenderPro-Medium';
+    font-family:'BlenderPro-Medium', sans-serif;
     overflow-x: hidden;   /* Hides horizontal scroll */
 }
 
@@ -148,6 +148,7 @@ a:hover, a:visited, a:link, a:active{
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    font-size: .9rem;
 }
 
 .primary{
@@ -191,7 +192,9 @@ a:hover, a:visited, a:link, a:active{
 }
 
 .icon {
-    max-width: 115px;
+    /* max-width: 115px; */
+    width: 100px;
+    height: 100px;
     padding: .5rem;
 }
 
@@ -338,9 +341,11 @@ a:hover, a:visited, a:link, a:active{
         font-size: .9rem;
     }
 
-    .icon--wrapper > img {
+    .icon {
         /* margin-top: 1rem; */
+        width: 80px;
         height: 80px;
+        padding: .5rem;
     } 
 
     .about-text{
