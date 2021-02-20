@@ -162,12 +162,6 @@ a:hover, a:visited, a:link, a:active{
     grid-gap: 2rem;
     justify-content: center;
     align-content: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    margin: auto;
-    max-width: 76%; */
     height: 100vh;
     /* grid-template-columns: minmax(auto,28vw) minmax(auto, 12vw); */
 }
@@ -179,6 +173,7 @@ a:hover, a:visited, a:link, a:active{
 
 .bio-image{
     max-width: 170px;
+    max-height: 170px;
 }
 
 .about--btn{
@@ -264,7 +259,6 @@ a:hover, a:visited, a:link, a:active{
 @media (max-width: 736px){
 
     .about--grid{
-        margin-top: 5rem;
         grid-template-columns: minmax(auto,450px);
     }
 
@@ -350,16 +344,11 @@ a:hover, a:visited, a:link, a:active{
 
     .about-text{
         width: 80vw;
-        /* width: calc(var(--vw, 1vw) * 80); */
         max-width: 450px;
         text-align: left;
         font-size: 1.4rem;
         margin: auto;
     }
-
-    /* .icon{
-        max-width: 100px;
-    } */
 
     .contact{
         margin-top: 3.5rem;
