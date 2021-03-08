@@ -182,7 +182,13 @@ a:hover, a:visited, a:link, a:active{
 
 .about--btn{
     display: flex;
+    align-items: center; 
+    max-width: 82%;
 }
+
+/* .about--btn > a {
+    position: absolute;
+} */
 
 /* Styling for icons: JavaScript, Node, React */
 .icon--wrapper{
@@ -289,6 +295,11 @@ a:hover, a:visited, a:link, a:active{
     .image--wrapper{
         display: flex;
         justify-content: center;
+    }
+
+    .about--btn{
+        align-items: none; 
+        max-width: 100%;
     }
 }
 
